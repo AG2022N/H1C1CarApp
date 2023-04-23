@@ -8,7 +8,15 @@ namespace H1U1BilVærksted
 {
     internal class Car
     {
-        string CarBrand, CarModel;
-        //ManufactureYear, LastCheckedDate
+        //string CarBrand, CarModel;
+        //DateTime ManufactureYear, LastCheckedDate
+
+
+
+        static string Conclusion()
+        {
+            return "Bilen skal ikke synes";
+            // return "Bilen skal til syn"
+        }
     }
 }

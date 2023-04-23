@@ -10,8 +10,12 @@ namespace H1U1BilVærksted
     {
         enum Brand
         {
-            Audi,
-            Fiat
+            Fiat,
+            AlfaRomeo
+        }
+        enum Model
+        {
+
         }
     }
 }

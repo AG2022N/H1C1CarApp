@@ -1,53 +1,35 @@
-﻿using System;
+﻿using H1U1BilVærksted;
+using System;
 
 while (true)
 {
     Console.Clear();
-    Console.WriteLine("Indtast Mærke");
-    Console.WriteLine("Indtast Model");
-    Console.WriteLine("Indtast Produktionsdato");
-    Console.WriteLine("Indtast Dato for sidste syn");
+    DateTime CurrentDate = DateTime.Today;
 
+    Console.SetCursorPosition(4, 1);
+    Console.Write("Indtast Mærke: ");
 
+    Console.SetCursorPosition(4, 2);
+    Console.Write("Indtast Model: ");
 
+    Console.SetCursorPosition(4, 3);
+    Console.Write("Indtast Produktionsdato, for eksempel. 2023.4.21: ");
+    //DateTime ProductionDate = DateTime.Parse(Console.ReadLine());   - send into object
 
+    Console.SetCursorPosition(4, 4);
+    Console.Write("Indtast Dato for sidste syn, for eksempel. 2023.4.21: ");
+    //DateTime LastThing = DateTime.Parse(Console.ReadLine());
+
+    //System.TimeSpan Difference = CurrentDate.Subtract(ManufactureDate);
+
+    Console.SetCursorPosition(4, 10);
+    string Temp = " ";
+    DateTime CurrentTime = DateTime.Now;
+    Console.Write("==============================================\n" +
+                  $"    Tjekkede: {CurrentTime}\n" +
+                  $"    Model: {Temp}\n" +
+                  $"    Produktionsdato: {Temp}\n" +
+                  $"    Sidst synes: {CurrentTime}\n" +
+                  $"    Konklusion: {Temp}");
     Console.ReadKey();
 }
-
-
-//Car Car1 = new Car();
-
-
-
-//bool x = false;
-//if (x == true)
-//{
-//    //Conclusion = "Bilen skal til syn"
-//    Console.WriteLine("Bilen skal til syn");
-//}
-//else if (x == false)
-//{
-//    //Conclusion = "Bilen skal ikke synes"
-//    Console.WriteLine("Bilen skal ikke synes");
-//}
-
-
-
-
-//Example for Output:
-//==============================================
-//Tjekkede: 2023.04.19
-//Mærke: Audi
-//Model: E
-//Produktionsdato: 2020
-//Sidst synes: N/A
-//Konklusion: Bilen skal ikke synes
-//
-//==============================================
-//Tjekkede: 2023.04.19
-//Mærke: Fiat
-//Model: N
-//Produktionsdato: 2018
-//Sidst synes: N/A
-//Konklusion: Bilen skal til syn
-//
